@@ -8,8 +8,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 model = load_model('model/model_LSTM.h5')
 
 # Memuat tokenizer dan labelencoder yang sudah disimpan
-tokenizer = pickle.load(open('model/tokenizer2.pkl', 'rb'))
-labelencoder = pickle.load(open('model/labelencoder2.pkl', 'rb'))
+tokenizer = pickle.load(open('model/tokenizer.pkl', 'rb'))
+labelencoder = pickle.load(open('model/labelencoder.pkl', 'rb'))
 
 # Layout untuk aplikasi Streamlit
 st.set_page_config(page_title="Sentiment Analysis OVO App", layout="wide")
